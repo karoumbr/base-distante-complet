@@ -98,7 +98,7 @@ public class ProduitsActivity extends AppCompatActivity {
 
             String strdes = strings[0];
 
-            String connstr = "http://192.168.100.116/bentechprotv/insertion_produit.php";
+            String connstr = "http://adresse-ip/bentechprotv/insertion_produit.php";
             try {
                 URL url = new URL(connstr);
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
@@ -168,7 +168,7 @@ public class ProduitsActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             String result = "";
-            String connstr = "http://192.168.100.116/bentechprotv/getAllProduits.php";
+            String connstr = "http://adresse-ip/bentechprotv/getAllProduits.php";
             URL url = null;
             try {
                 url = new URL(connstr);
