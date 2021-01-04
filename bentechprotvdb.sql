@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 04 jan. 2021 à 13:07
+-- Généré le : lun. 04 jan. 2021 à 15:39
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.4.4
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `bentechprotvdb`
 --
+CREATE DATABASE IF NOT EXISTS `bentechprotvdb` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `bentechprotvdb`;
 
 -- --------------------------------------------------------
 
@@ -39,7 +41,13 @@ CREATE TABLE `produits` (
 INSERT INTO `produits` (`id`, `designation`) VALUES
 (1, 'Pizza'),
 (2, 'Biscuits'),
-(3, 'Lait');
+(3, 'Lait'),
+(4, 'test'),
+(5, 'toto'),
+(6, 'toto'),
+(7, 'sem'),
+(8, 'popo'),
+(9, 'roro');
 
 -- --------------------------------------------------------
 
@@ -83,7 +91,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `produits`
 --
 ALTER TABLE `produits`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
