@@ -3,15 +3,15 @@ package com.bentechprotv.android.basedistante;
 import org.json.JSONObject;
 
 public class Produit {
-    private String reference, designation;
+    private String id, designation;
 
     public Produit(JSONObject jObject) {
-        this.reference = jObject.optString("id");
+        this.id = jObject.optString("id");
         this.designation = jObject.optString("designation");
     }
 
     public String getReference() {
-        return reference;
+        return id;
     }
 
     public String getDesignation() {
