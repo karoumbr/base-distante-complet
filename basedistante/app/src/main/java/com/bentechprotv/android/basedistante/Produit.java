@@ -6,7 +6,7 @@ public class Produit {
     private String reference, designation;
 
     public Produit(JSONObject jObject) {
-        this.reference = jObject.optString("reference");
+        this.reference = jObject.optString("id");
         this.designation = jObject.optString("designation");
     }
 
